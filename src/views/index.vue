@@ -29,24 +29,13 @@
     <el-button type="danger" round>Danger</el-button>
   </el-row>
 
-  <el-row class="el-row-mb-20" type="flex" justify="center">
-    <el-button :icon="Search" circle></el-button>
-    <el-button type="primary" :icon="Edit" circle></el-button>
-    <el-button type="success" :icon="Check" circle></el-button>
-    <el-button type="info" :icon="Message" circle></el-button>
-    <el-button type="warning" :icon="Star" circle></el-button>
-    <el-button type="danger" :icon="Delete" circle></el-button>
-  </el-row>
 </template>
-<script setup >
-import {
-  Search,
-  Edit,
-  Check,
-  Message,
-  Star,
-  Delete,
-} from "@element-plus/icons-vue";
+<script >
+export default {
+  setup() {
+    console.log('运行环境配置：',process.env);
+  },
+};
 </script>
 <style lang="scss" scoped>
 .el-row-mb-20 {
