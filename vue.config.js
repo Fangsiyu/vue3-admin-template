@@ -30,7 +30,7 @@ module.exports = {
     configureWebpack: {
         plugins: [
             new HtmlWebpackPlugin({
-                title: 'vue3-template',
+                title: 'vue3-admin-template',
                 favicon: 'public/favicon.ico',
                 hash: true,
                 template: 'public/index.html'
