@@ -1,6 +1,6 @@
 <template>
   <img src="@/assets/logo.png" alt="" />
-  <h3>Hello World Vue</h3>
+  <h3>Hello World</h3>
   <el-row class="el-row-mb-20" type="flex" justify="center">
     <el-button>Default</el-button>
     <el-button type="primary">Primary</el-button>

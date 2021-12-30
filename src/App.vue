@@ -1,8 +1,9 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/link">Link</router-link>
+    <router-link to="/">主页</router-link> |
+    <router-link to="/link">资源</router-link> |
+    <router-link to="/about">关于</router-link>
+    
   </div>
   <router-view/>
 </template>

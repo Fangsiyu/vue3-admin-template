@@ -1,5 +1,8 @@
 <template>
   <div class="about">
-    <h1>PC 端基础模板</h1>
+    <h2>PC 端基础模板</h2>
   </div>
 </template>
+<style lang="scss" scoped>
+
+</style>
