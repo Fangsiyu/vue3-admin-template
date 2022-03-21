@@ -38,7 +38,7 @@ service.interceptors.response.use(function (response) {
     if (error?.response) {
         switch (error.response.status) {
             case 404:
-                error.message = '请求地址出错' + error.response.data.path;
+                error.message = error.response.data.message;
                 break;
             case 500:
                 error.message = '服务器出错（500）';
@@ -56,7 +56,7 @@ service.interceptors.response.use(function (response) {
 });
 //get请求
 export const get = (url, data, options = {}) => {
-    const mergeOptions = { ...options, showLoading: true };
+    const mergeOptions = { showLoading: true, ...options };
     return new Promise((resolve, reject) => {
         service({ url, params: data, method: 'get', ...mergeOptions })
             .then(res => {
@@ -68,7 +68,7 @@ export const get = (url, data, options = {}) => {
 
 //post请求
 export const post = (url, data, options = {}) => {
-    const mergeOptions = { ...options, showLoading: true };
+    const mergeOptions = { showLoading: true, ...options };
     return new Promise((resolve, reject) => {
         service({ url, method: 'post', data, ...mergeOptions })
             .then(res => {
