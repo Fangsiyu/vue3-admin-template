@@ -1,6 +1,7 @@
 // vue.config.js
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+//按需引入配置
 const AutoImport = require('unplugin-auto-import/webpack')
 const Components = require('unplugin-vue-components/webpack')
 const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
@@ -39,6 +40,7 @@ module.exports = {
                 hash: true,
                 template: 'public/index.html'
             }),
+            //按需引入配置
             AutoImport({
                 resolvers: [ElementPlusResolver()],
             }),
