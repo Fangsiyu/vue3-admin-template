@@ -1,6 +1,10 @@
 // vue.config.js
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const AutoImport = require('unplugin-auto-import/webpack')
+const Components = require('unplugin-vue-components/webpack')
+const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
+
 const path = require("path");
 
 function resolve(dir) {
@@ -34,7 +38,13 @@ module.exports = {
                 favicon: 'public/favicon.ico',
                 hash: true,
                 template: 'public/index.html'
-            })
+            }),
+            AutoImport({
+                resolvers: [ElementPlusResolver()],
+            }),
+            Components({
+                resolvers: [ElementPlusResolver()],
+            }),
         ],
         devServer: {
             open: true,//设置浏览器自动打开
