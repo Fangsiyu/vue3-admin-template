@@ -9,7 +9,7 @@
 - [x] 请求封装
 - [x] 状态管理 vuex
 - [x] ElementPlu 按需引入，[参考链接：点我](https://element-plus.org/zh-CN/guide/quickstart.html#%25E6%258C%2589%25E9%259C%2580%25E5%25AF%25BC%25E5%2585%25A5)
-- [ ] 图标引入
+- [x] 图标引入 iconpark
 - [ ] ...
 
 ## Project setup
