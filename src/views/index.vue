@@ -249,7 +249,7 @@
       </defs>
     </svg>
   </div>
-  <h3>Hello World</h3>
+  <h3>Hello World !</h3>
   <home theme="two-tone" size="40" :fill="['#9013fe', '#2F88FF']" />
 
   <el-row class="el-row-mb-20" type="flex" justify="center">
